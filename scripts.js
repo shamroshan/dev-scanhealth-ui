@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function fetchBotResponse(userInput) {
         try {
             // Send user input to the server and get a response
-            const response = await fetch("https://scanhealth-api.azurewebsites.net/", {
+            const response = await fetch("https://scanhealth-api.azurewebsites.net/chat", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
