@@ -27,11 +27,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./dev-scanhealth-ui  # Adjust this to your correct folder
+        working-directory: ./dev-scanhealth-ui  # Make sure this matches your repo structure
 
       - name: Run build
         run: npm run build
-        working-directory: ./dev-scanhealth-ui  # Adjust this to your correct folder
+        working-directory: ./dev-scanhealth-ui  # Make sure this matches your repo structure
 
       - name: Build And Deploy
         id: builddeploy
