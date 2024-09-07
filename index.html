@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding for the webpage -->
+    <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Scan Health</title>
+    <!-- Link to custom stylesheet -->
+    <link rel="stylesheet" href="/static/styles.css">
+    <!-- Bootstrap CSS for styling and layout -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap Icons for icon fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <!-- Favicon for the webpage -->
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+    <!-- Marked.js for rendering markdown content -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Header Section with Navigation Bar -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-light bg-light shadow-sm">
+            <!-- Logo and brand link -->
+            <a class="navbar-brand" href="#">
+                <img src="/static/logo.png" alt="Scan Logo" class="logo">
+            </a>
+            <!-- Page title -->
+            <h3>Scan Health</h3>
+            <div class="d-flex">
+                <!-- Button to start a new chat -->
+                <button id="newChatBtn" class="btn btn-outline-primary">
+                    <i class="bi bi-chat-dots"></i>
+                </button>
+                <!-- Button for user profile -->
+                <button id="profileBtn" class="btn btn-outline-secondary ml-2">
+                    <i class="bi bi-person-circle"></i>
+                </button>
+                <!-- Button to close the chat window -->
+                <button id="closeChatBtn" class="btn btn-outline-danger ml-2">
+                    <i class="bi bi-x-circle"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Chat Window Section -->
+    <div class="chat-window">
+        <!-- Container for chat messages -->
+        <div id="chatBox" class="chat-box"></div>
+
+        <!-- Input Box for user to type messages -->
+        <div class="input-box">
+            <!-- Input field for user message -->
+            <input type="text" placeholder="How can I assist you?" id="userInput">
+            <!-- Button to send user message -->
+            <button id="sendBtn">
+                <i class="bi bi-send"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- jQuery library for Bootstrap JavaScript components -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Popper.js for Bootstrap tooltips and popovers -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JavaScript for components and functionality -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript for handling chat interactions -->
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
